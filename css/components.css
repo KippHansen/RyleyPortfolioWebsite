@@ -46,14 +46,30 @@
   padding: 0 1rem;
 }
 
-.panel {
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  background: var(--surface);
-  border: 3px solid var(--border);
+/* ---------- Centered content column ---------- */
+.page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.panel h2 {
+/* One continuous panel */
+.page__content {
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border-left: 3px solid var(--border);
+  border-right: 3px solid var(--border);
+  min-height: 60vh;
+}
+
+/* Sections flow inside it, divided by a line */
+.page__content section + section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px dashed var(--border);
+}
+
+.page__content h2 {
   margin-top: 0;
   font-family: var(--font-heading, Georgia, serif);
   color: var(--accent);
