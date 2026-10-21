@@ -20,7 +20,9 @@
     --success:       var(--olive);
     --border:        var(--navy);
     --on-accent:     #ffffff;    
-}
+
+    --content-width: 900px;
+  }
 
 /* Dark Theme: Semantics Remapped */
 

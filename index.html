@@ -11,20 +11,32 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <a href="#top" class="site-header__brand">Ryley Hansen</a>
-        <nav class="site-header__nav" aria-label="Main">
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="banner" id="top">
+        <h1 class="banner__name">Ryley Hansen</h1>
+        <p class="banner__tagline">Your one-line tagline here</p>
     </header>
 
-    <section class="hero" id="top">
-        <p class="hero__eyebrow">Hi, I'm</p>
-        <h1 class="hero__name">Ryley Hansen</h1>
-        <p class="hero__tagline">Who am I</p>
-        <a href="#projects" class="btn">See work</a>
-    </section>
+    <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="page">
+        <section class="panel" id="about">
+            <h2>About</h2>
+            <p>A short intro about you.</p>
+        </section>
+
+        <section class="panel" id="projects">
+            <h2>Projects</h2>
+            <p>Your projects go here.</p>
+        </section>
+
+        <section class="panel" id="contact">
+            <h2>Contact</h2>
+            <p>Email, GitHub, LinkedIn.</p>
+        </section>
+    </main>
 </body>
 </html>

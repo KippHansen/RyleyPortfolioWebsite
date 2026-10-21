@@ -1,76 +1,60 @@
-/* Top Bar */
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    background: var(--bg);
-    border-bottom: 2px solid var(--border);
+/* ---------- Banner ---------- */
+.banner {
+  padding: clamp(3rem, 10vw, 6rem) 1.5rem;
+  text-align: center;
+  background: var(--surface);
+  border-bottom: 4px solid var(--border);
 }
 
-.site-header__brand{
-    font-family: var(--font-heading, Georgia, serif);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--text);
-    text-decoration: none;
+.banner__name {
+  margin: 0;
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  line-height: 1.1;
+  color: var(--accent);
 }
 
-.site-header__nav {
-    display: flex;
-    gap: 1.5rem;
+.banner__tagline {
+  margin: 1rem 0 0;
+  font-size: 1.2rem;
+  color: var(--text-muted);
 }
 
-.site-header__nav a {
-    color: var(--text);
-    text-decoration: none;
+/* ---------- Nav ---------- */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg);
+  border-bottom: 2px solid var(--border);
 }
 
-.site-header__nav a:hover {
-    color: var(--accent);
-}
-
-/* Hero Banner */
-.hero {
-padding: clamp(3rem, 10vw, 7rem) 2rem;
-text-align: center;
-background:var (--accent);
-color: var(--on-accent);
-}
-
-.hero__eyebrow {
-    margin: 0 0 0.5rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-}
-
-.hero__name {
-    margin: 0;
-    font-family: var(--font-heading, Georgia, serif);
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    line-height: 1.1;
-}
-
-.hero__tagline {
-    max-width: 36rem;
-    margin: 1rem auto 2rem;
-    font-size: 1.15rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent);
-  color: var(--on-accent);
+.nav a {
+  color: var(--text);
   text-decoration: none;
-  font-weight: 700;
-  border-radius: 999px;
 }
 
-.btn:hover {
-  background: var(--accent-hover);
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Centered content column ---------- */
+.page {
+  max-width: var(--content-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.panel {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 3px solid var(--border);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-family: var(--font-heading, Georgia, serif);
+  color: var(--accent);
 }
