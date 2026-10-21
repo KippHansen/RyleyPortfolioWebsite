@@ -1,0 +1,50 @@
+:root {
+    /* Tier 1: default palette */
+    --crimson:   #CC2132;
+    --tangerine: #E6692A;
+    --amber:     #ED9530;
+    --peach:     #E9BD96;
+    --olive:     #988A20;
+    --teal:      #34685C;
+    --navy:      #1E404F;
+    --cream:     #FBF3E8;
+
+    /* Tier 2: Semantic Tokens */
+    --bg:            var(--cream);
+    --surface:       var(--peach);
+    --text:          var(--navy);
+    --text-muted:    var(--teal);
+    --accent:        var(--crimson);
+    --accent-hover:  var(--tangerine);
+    --highlight:     var(--amber);
+    --success:       var(--olive);
+    --border:        var(--navy);
+    --on-accent:     #ffffff;    
+}
+
+/* Dark Theme: Semantics Remapped */
+
+[data-theme="dark"] {
+    --bg:            var(--navy);
+    --surface:       #17333f;   
+    --text:          var(--cream);
+    --text-muted:    var(--peach);
+    --accent:        var(--amber);
+    --accent-hover:  var(--tangerine);
+    --border:        var(--peach);
+    --on-accent:     var(--navy);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:            var(--navy);
+    --surface:       #17333f;
+    --text:          var(--cream);
+    --text-muted:    var(--peach);
+    --accent:        var(--amber);
+    --accent-hover:  var(--tangerine);
+    --border:        var(--peach);
+    --on-accent:     var(--navy);
+  }
+}
+
