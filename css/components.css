@@ -1,6 +1,6 @@
 /* ---------- Banner ---------- */
 .banner {
-  padding: clamp(3rem, 10vw, 6rem) 1.5rem;
+  padding: clamp(1rem, 4vw, 2rem) 1.5rem;
   text-align: center;
   background: var(--surface);
   border-bottom: 4px solid var(--border);
