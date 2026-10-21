@@ -78,7 +78,7 @@
 .profiles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.5rem;
 }
 
@@ -88,7 +88,7 @@
 
 .profile-btn img {
   display: block;
-  width: 64px;      /* set to your image's size, or a multiple of it */
+  width: 96px;      /* set to your image's size, or a multiple of it */
   height: auto;
   image-rendering: pixelated;
 }
