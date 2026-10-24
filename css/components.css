@@ -20,25 +20,6 @@
   color: var(--text-muted);
 }
 
-/* ---------- Nav ---------- */
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0.75rem 1rem;
-  background: var(--bg);
-  border-bottom: 2px solid var(--border);
-}
-
-.nav a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.nav a:hover {
-  color: var(--accent);
-}
-
 /* ---------- Centered content column ---------- */
 .page {
   max-width: var(--content-width);
