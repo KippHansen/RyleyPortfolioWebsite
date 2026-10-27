@@ -85,3 +85,82 @@
 .profile-btn:hover .down,
 .profile-btn:active .down,
 .profile-btn:focus-visible .down { display: block; }
+
+/* ---------- Game carousel ---------- */
+.carousel {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.carousel__track {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;            /* hide scrollbar (Firefox) */
+}
+.carousel__track::-webkit-scrollbar { display: none; }  /* hide scrollbar (Chrome/Safari) */
+
+.game-card {
+  flex: 0 0 calc((100% - 2rem) / 3);   /* 3 cards visible */
+  scroll-snap-align: start;
+}
+
+.game-card a {
+  display: block;
+  background: var(--bg);
+  border: 3px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.game-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+}
+
+.game-card__title {
+  display: block;
+  padding: 0.5rem 0.75rem 0;
+  font-weight: 700;
+}
+
+.game-card__store {
+  display: block;
+  padding: 0 0.75rem 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.game-card a:hover,
+.game-card a:focus-visible {
+  border-color: var(--accent);
+}
+
+/* Arrows */
+.carousel__arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 2.5rem;
+  height: 3.5rem;
+  background: var(--bg);
+  color: var(--accent);
+  border: 3px solid var(--border);
+  cursor: pointer;
+}
+.carousel__arrow--prev { left: -1rem; }
+.carousel__arrow--next { right: -1rem; }
+.carousel__arrow:hover { background: var(--accent); color: var(--on-accent); }
+.carousel__arrow:disabled { opacity: 0.3; cursor: default; }
+
+/* Fewer cards on phones */
+@media (max-width: 600px) {
+  .game-card { flex-basis: 75%; }
+}
