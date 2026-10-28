@@ -172,3 +172,24 @@
   color: var(--text);
   font-size: 1rem;
 }
+/* ---------- Mini banner (footer) ---------- */
+.mini-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+  padding: 1rem 1.5rem;
+  background: var(--surface);
+  border-top: 4px solid var(--border);
+  text-align: center;
+}
+
+.mini-banner a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.mini-banner a:hover,
+.mini-banner a:focus-visible {
+  color: var(--accent);
+}
