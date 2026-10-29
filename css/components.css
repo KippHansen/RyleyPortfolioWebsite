@@ -120,7 +120,7 @@
 .game-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 460 / 215;
+  aspect-ratio: 315 / 250;
   object-fit: cover;
 }
 
