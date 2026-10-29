@@ -44,7 +44,8 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg:            var(--dark_marine);
-    --surface:       var(--dark_marine);
+    --surface:       #17333f;
+    --banner_bg:     var(--dark_marine);
     --text:          var(--cream);
     --text-muted:    var(--peach);
     --accent:        var(--amber);
