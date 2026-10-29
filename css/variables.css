@@ -38,7 +38,7 @@
     --accent:        var(--amber);
     --accent-hover:  var(--tangerine);
     --border:        var(--olive);
-    --on-accent:     var(--navy);
+    --on-accent:     var(--dark_marine);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +50,7 @@
     --accent:        var(--amber);
     --accent-hover:  var(--tangerine);
     --border:        var(--olive);
-    --on-accent:     var(--navy);
+    --on-accent:     var(--dark_marine);
   }
 }
 
