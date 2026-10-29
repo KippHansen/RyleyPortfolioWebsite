@@ -2,4 +2,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  line-height: 1.4;
 }

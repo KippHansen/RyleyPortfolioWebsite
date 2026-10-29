@@ -1,4 +1,6 @@
 :root {
+    --font-heading: "Press Start 2P", monospace;
+    --font-body: "VT323", monospace;
     /* Tier 1: default palette */
     --crimson:   #CC2132;
     --tangerine: #E6692A;
