@@ -2,14 +2,16 @@
     --font-heading: "Press Start 2P", monospace;
     --font-body: "VT323", monospace;
     /* Tier 1: default palette */
-    --crimson:   #CC2132;
-    --tangerine: #E6692A;
-    --amber:     #ED9530;
-    --peach:     #E9BD96;
-    --olive:     #988A20;
-    --teal:      #34685C;
-    --navy:      #1E404F;
-    --cream:     #FBF3E8;
+    --crimson:     #CC2132;
+    --tangerine:   #E6692A;
+    --amber:       #ED9530;
+    --peach:       #E9BD96;
+    --olive:       #988A20;
+    --teal:        #34685C;
+    --navy:        #1E404F;
+    --cream:       #FBF3E8;
+    --dark_marine: #204135;
+
 
     /* Tier 2: Semantic Tokens */
     --bg:            var(--cream);
@@ -41,7 +43,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg:            var(--navy);
+    --bg:            var(--dark_marine);
     --surface:       #17333f;
     --text:          var(--cream);
     --text-muted:    var(--peach);
