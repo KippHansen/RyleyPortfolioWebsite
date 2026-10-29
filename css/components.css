@@ -20,19 +20,13 @@
 /* ---------- Centered content column ---------- */
 .page {
   max-width: var(--content-width);
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-/* ---------- Centered content column ---------- */
-.page {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: 0 auto 2rem;
+  padding: 0;
 }
 
 /* One continuous panel */
 .page__content {
+  box-sizing: border-box;
   padding: 2rem 1.5rem;
   background: var(--surface);
   border-left: 3px solid var(--border);
@@ -50,7 +44,14 @@
 .page__content h2 {
   margin-top: 0;
   font-family: var(--font-heading, Georgia, serif);
+  font-size: 1.25rem;
+  line-height: 1.4;
   color: var(--accent);
+}
+
+.page__content h3 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
 }
 
 .profiles {
