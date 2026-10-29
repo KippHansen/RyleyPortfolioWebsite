@@ -216,3 +216,17 @@
   height: auto;
   image-rendering: pixelated;
 }
+
+#profiles h2,
+#doan_digital h2 {
+  margin: 0 -1.5rem 1.5rem;
+}
+
+#profiles h2 img,
+#doan_digital h2 img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  image-rendering: pixelated;
+}
